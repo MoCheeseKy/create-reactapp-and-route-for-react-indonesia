@@ -43,11 +43,12 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
     - Hapus <> <div>Testing</div> </>
     - Ganti :
       <pre>
-      <Suspense>
-      <Routes>
-      <Route path='/' element={<div>Testing</div>} />
-      </Routes>
-      </Suspense>
+      <code>
+      &lt;Suspense&gt;
+      &lt;Routes&gt;
+      &lt;Route path='/' element={&lt;div&gt;Testing&lt;/div&gt;} /&gt;
+      &lt;/Routes&gt;
+      &lt;/Suspense&gt;</code>
       </pre>
       Kita bakal mainan di path sama element aja untuk saat ini
       1 halaman diwakili oleh 1 <Route></Route>
