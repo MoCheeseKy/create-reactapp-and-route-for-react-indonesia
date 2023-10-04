@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+Disini aku akan menjelaskan cara membuat react-app
+Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa membuat page components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Membuat React App
+   Ketik di cmd : npx create-react-app nama-project
+   Ini disebut metode CRA, nama project pake huruf kecil tanpa spasi, spasi diganti -
 
-## Available Scripts
+2. Menghapus file tidak terpakai di folder src sebagai berikut :
+   - App.test.js
+   - reportWebVitals.js
+   - setupTests.js
+   - logo.svg
+3. Buka index.js
+   - Hapus import reportWebVitals ....
+   - Hapus command dan reportWebVitals()
+   - save
+4. Hapus file App.css
+5. Buka App.js
 
-In the project directory, you can run:
+   - Hapus import App.css
+   - Hapus import Logo
+   - Hapus isi Return, ganti <> <div>Testing</div> </>
+   - save
 
-### `npm start`
+6. Coba buka terminal. Ketik : npm start
+   npm start digunakan untuk merunning program. ketik ctrl + c untuk menghentikan.
+   harusnya kebuka di localhost:3000 (kecuali post ini lagi dipake), harusnya muncul text testing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+7. Hentikan dulu program.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+8. Ketik : npm i react-router-dom
+   Kita tambahin dependencies react-router-dom untuk bisa menggunakan routing
 
-### `npm test`
+9. Cek package.json, kalo sukses di dependencies harusnya ada react-router-dom (berlaku kalo kalian install dependencies lain juga)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+10. Buka index.js
+    - import { BrowserRouter } from 'react-router-dom';
+    - bunngkus <App/> dengan <BrowserRouter></BrowserRouter>
+11. npm start kembali, dan cek, harusnya sama seperti sebelumnya
+12. Buka App.js
+    - import React, { Suspense } from 'react'
+    - import { Route, Routes } from 'react-router-dom';
+    - Hapus <> <div>Testing</div> </>
+    - Ganti :
+      <Suspense>
+      <Routes>
+      <Route path='/' element={<div>Testing</div>} />
+      </Routes>
+      </Suspense>
+      Kita bakal mainan di path sama element aja untuk saat ini
+      1 halaman diwakili oleh 1 <Route></Route>
+      path adalah arah route kita. element adalah html yang kita return.
+13. Buat folder Pages didalam folder src
+14. Buat folder Home dan About didalam folder Pages
+15. Buat file index.jsx di folder Home dan About (masing masing 1)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+16. Masukan ke masing-masing filenya :
+    import React from "react";
+    export default function Component(){
+    return(
+    <>
+    <div>Testing</div>
+    </>
+    )
+    }
+17. Ganti kata Component jadi sesuai dengan nama folder. Misal Home, ganti jadi Home
+18. Ubah isi divnya sesuai nama Folder. Misal Home, ganti jadi Home
+19. Buka App.js :
+    - Import Pages : (Home, About)
+    - Buat Route baru, dengan path /about
+    - Masukan component Home ke path /
+    - Masukan component About ke path /about
+      Cara menulis sebuah component itu sama seperti menulis tag HTML, namun diganti dengan nama componentnya
+      Misal component Home, nanti saat dipanggil ditulis <Home></Home>, atau bisa juga <Home/> jika kalian tidak mau menambahkan hal lain didalam Home.
+20. Coba npm start kembali
+21. Buka http://localhost:3000 dan http://localhost:3000/about, harusnya muncul tulisan sesuai yang kalian tulis didalam componentnya
+    note : ini kalo di runnya di localhost 3000, kalo misal localhost 3001 ya sesuaikan saja
+22. Kalo sudah aman, kalian sekarang sudah bisa menggunakan routing untuk React JS
+    Semua yang ada didalam folder pages disebut component
+    Component yang ada didalam folder pages mendefinisikan bahwa mereka adalah sebuah halaman yang akan kalian tampilkan di website, sesuai dengan path route yang sudah kalian berikan didalam App.js
+    Oh iya, path yang cuman / itu bisa kalian sebut path default / path yang kalian munculin pertama kali program dijalankan, atau biasa disebut landing page sebuah halaman, misal http://localhost:3000
+    Sekarang kalian tinggal isi componentnya dengan tag tag HTML yang kalian inginkan
+    Kalo mau nambahin css ya tinggal buat file css aja, sejajarkan dengan index.jsx, lalu nanti kalian import cssnya
+    Untuk memberi class pada html diganti jadi className
+    Aku udah kasih contohnya di component Home, kira kira nanti kaya gitu.
