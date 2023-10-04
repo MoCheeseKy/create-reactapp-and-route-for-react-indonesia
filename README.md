@@ -1,10 +1,14 @@
 Disini aku akan menjelaskan cara membuat react-app <br/>
-Target : <br/> - Bisa membuat React App - Bisa menggunakan routing di React - Bisa membuat page components
+Target : <br/> 
+    - Bisa membuat React App 
+    - Bisa menggunakan routing di React 
+    - Bisa membuat page components
+
+<hr/>
 
 1. Membuat React App <br/>
    Ketik di cmd : npx create-react-app nama-project <br/>
    Ini disebut metode CRA, nama project pake huruf kecil tanpa spasi, spasi diganti - <br/>
-
 2. Menghapus file tidak terpakai di folder src sebagai berikut : <br/>
    - App.test.js
    - reportWebVitals.js
@@ -16,7 +20,6 @@ Target : <br/> - Bisa membuat React App - Bisa menggunakan routing di React - Bi
    - save
 4. Hapus file App.css <br/>
 5. Buka App.js <br/>
-
    - Hapus import App.css
    - Hapus import Logo
    - Hapus isi Return, ganti
@@ -28,18 +31,13 @@ Target : <br/> - Bisa membuat React App - Bisa menggunakan routing di React - Bi
     </code>
     </pre>
    - save
-
 6. Coba buka terminal. Ketik : npm start <br/>
    npm start digunakan untuk merunning program. ketik ctrl + c untuk menghentikan. <br/>
    harusnya kebuka di localhost:3000 (kecuali post ini lagi dipake), harusnya muncul text testing <br/>
-
 7. Hentikan dulu program. <br/>
-
 8. Ketik : npm i react-router-dom <br/>
    Kita tambahin dependencies react-router-dom untuk bisa menggunakan routing <br/>
-
 9. Cek package.json, kalo sukses di dependencies harusnya ada react-router-dom (berlaku kalo kalian install dependencies lain juga) <br/>
-
 10. Buka index.js <br/>
     - import { BrowserRouter } from 'react-router-dom';
     - bunngkus &lt;App/&gt; dengan &lt;BrowserRouter&gt;&lt;/BrowserRouter&gt;
@@ -70,7 +68,6 @@ Target : <br/> - Bisa membuat React App - Bisa menggunakan routing di React - Bi
 13. Buat folder Pages didalam folder src <br/>
 14. Buat folder Home dan About didalam folder Pages <br/>
 15. Buat file index.jsx di folder Home dan About (masing masing 1) <br/>
-
 16. Masukan ke masing-masing filenya : <br/>
     <pre>
     <code>
@@ -78,14 +75,13 @@ Target : <br/> - Bisa membuat React App - Bisa menggunakan routing di React - Bi
     
     export default function Component(){
     return(
-    &lt;&gt;
-    &lt;div&gt;Testing&lt;/div&gt;
-    &lt;/&gt;
+        &lt;&gt;
+            &lt;div&gt;Testing&lt;/div&gt;
+        &lt;/&gt;
     )
     }
     </code>
     </pre>
-
 17. Ganti kata Component jadi sesuai dengan nama folder. Misal Home, ganti jadi Home <br/>
 18. Ubah isi divnya sesuai nama Folder. Misal Home, ganti jadi Home <br/>
 19. Buka App.js : <br/>
