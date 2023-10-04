@@ -42,11 +42,13 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
     - import { Route, Routes } from 'react-router-dom';
     - Hapus <> <div>Testing</div> </>
     - Ganti :
+      <code>
       <Suspense>
       <Routes>
       <Route path='/' element={<div>Testing</div>} />
       </Routes>
       </Suspense>
+      </code>
       Kita bakal mainan di path sama element aja untuk saat ini
       1 halaman diwakili oleh 1 <Route></Route>
       path adalah arah route kita. element adalah html yang kita return.
