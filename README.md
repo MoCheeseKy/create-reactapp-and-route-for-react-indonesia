@@ -8,6 +8,12 @@ Target : <br/>
     - Bisa membuat React App 
     - Bisa menggunakan routing di React 
     - Bisa membuat page components
+<br/>
+Btw, biar lebih faham clone aja projectnya <br/>
+Buka cmd ketik : <br/>
+git clone https://github.com/MoCheeseKy/create-reactapp-and-route-for-react-indonesia.git <br/>
+cd create-reactapp-and-route-for-react-indonesia <br/>
+code . <br/>
 
 <hr/>
 
