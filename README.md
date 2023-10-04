@@ -19,7 +19,14 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
 
    - Hapus import App.css
    - Hapus import Logo
-   - Hapus isi Return, ganti <> <div>Testing</div> </>
+   - Hapus isi Return, ganti
+   <pre>
+    <code>
+    &lt;&gt; 
+        &lt;div&gt;Testing&lt;/div&gt; 
+    &lt;/&gt;
+    </code>
+    </pre>
    - save
 
 6. Coba buka terminal. Ketik : npm start
@@ -58,21 +65,25 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
       &lt;/Suspense&gt;</code>
       </pre>
       Kita bakal mainan di path sama element aja untuk saat ini
-      1 halaman diwakili oleh 1 <Route></Route>
+      1 halaman diwakili oleh 1 &lt;Route&gt;&lt;/Route&gt;
       path adalah arah route kita. element adalah html yang kita return.
 13. Buat folder Pages didalam folder src
 14. Buat folder Home dan About didalam folder Pages
 15. Buat file index.jsx di folder Home dan About (masing masing 1)
 
 16. Masukan ke masing-masing filenya :
+    <pre>
+    <code>
     import React from "react";
     export default function Component(){
     return(
-    <>
-    <div>Testing</div>
-    </>
+    &lt;&gt;
+    &lt;div&gt;Testing&lt;/div&gt;
+    &lt;/&gt;
     )
     }
+    </code>
+    </pre>
 17. Ganti kata Component jadi sesuai dengan nama folder. Misal Home, ganti jadi Home
 18. Ubah isi divnya sesuai nama Folder. Misal Home, ganti jadi Home
 19. Buka App.js :
@@ -81,7 +92,7 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
     - Masukan component Home ke path /
     - Masukan component About ke path /about
       Cara menulis sebuah component itu sama seperti menulis tag HTML, namun diganti dengan nama componentnya
-      Misal component Home, nanti saat dipanggil ditulis <Home></Home>, atau bisa juga <Home/> jika kalian tidak mau menambahkan hal lain didalam Home.
+      Misal component Home, nanti saat dipanggil ditulis &lt;Home&gt;&lt;/Home&gt; , atau bisa juga &lt;Home/&gt; jika kalian tidak mau menambahkan hal lain didalam Home.
 20. Coba npm start kembali
 21. Buka http://localhost:3000 dan http://localhost:3000/about, harusnya muncul tulisan sesuai yang kalian tulis didalam componentnya
     note : ini kalo di runnya di localhost 3000, kalo misal localhost 3001 ya sesuaikan saja
