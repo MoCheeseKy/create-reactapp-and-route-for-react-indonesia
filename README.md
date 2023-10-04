@@ -43,9 +43,9 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
     - Hapus
     <pre>
     <code>
-    <> 
+    &lt;&gt; 
         &lt;div&gt;Testing&lt;/div&gt; 
-    </>
+    &lt;/&gt;
     </code>
     </pre>
     - Ganti :
