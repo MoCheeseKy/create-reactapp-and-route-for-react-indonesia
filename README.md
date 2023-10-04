@@ -35,7 +35,7 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
 
 10. Buka index.js
     - import { BrowserRouter } from 'react-router-dom';
-    - bunngkus <App/> dengan <BrowserRouter></BrowserRouter>
+    - bunngkus &lt;App/&gt; dengan &lt;BrowserRouter&gt;&lt;/BrowserRouter&gt;
 11. npm start kembali, dan cek, harusnya sama seperti sebelumnya
 12. Buka App.js
     - import React, { Suspense } from 'react'
