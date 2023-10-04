@@ -40,14 +40,21 @@ Target : - Bisa membuat React App - Bisa menggunakan routing di React - Bisa mem
 12. Buka App.js
     - import React, { Suspense } from 'react'
     - import { Route, Routes } from 'react-router-dom';
-    - Hapus <> <div>Testing</div> </>
+    - Hapus
+    <pre>
+    <code>
+    <> 
+        &lt;div&gt;Testing&lt;/div&gt; 
+    </>
+    </code>
+    </pre>
     - Ganti :
       <pre>
       <code>
       &lt;Suspense&gt;
-      &lt;Routes&gt;
-      &lt;Route path='/' element={&lt;div&gt;Testing&lt;/div&gt;} /&gt;
-      &lt;/Routes&gt;
+        &lt;Routes&gt;
+            &lt;Route path='/' element={&lt;div&gt;Testing&lt;/div&gt;} /&gt;
+        &lt;/Routes&gt;
       &lt;/Suspense&gt;</code>
       </pre>
       Kita bakal mainan di path sama element aja untuk saat ini
