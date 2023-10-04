@@ -1,3 +1,8 @@
+<h1>Tutorial Membuat React App, dan belajar Routing pada React</h1>
+<h3>Bahasa Indonesia</h3>
+
+<hr/>
+
 Disini aku akan menjelaskan cara membuat react-app <br/>
 Target : <br/> 
     - Bisa membuat React App 
@@ -102,3 +107,7 @@ Target : <br/>
     Kalo mau nambahin css ya tinggal buat file css aja, sejajarkan dengan index.jsx, lalu nanti kalian import cssnya <br/>
     Untuk memberi class pada html diganti jadi className <br/>
     Aku udah kasih contohnya di component Home, kira kira nanti kaya gitu. <br/>
+
+<hr/>
+
+<h3>Happy Coding !!!</h3>
